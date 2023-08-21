@@ -2,7 +2,7 @@
 #$ -l h_rt=72:00:00
 #$ -l h_vmem=50G
 #$ -N Manta_Small_Batch
-#$ -o path/to/Manta_Small_Batch-$JOB_ID.out
+#$ -o /path/to/Manta_Small_Batch-$JOB_ID.out
 #$ -e /path/to/Manta_Small_Batch-$JOB_ID.err
 #$ -j y
 #$ -q queue
