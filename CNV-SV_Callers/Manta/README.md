@@ -1,4 +1,4 @@
-This folder contains the scripts used to run Manta on a group of samples. For the Illumina Manta documentation please look [here](https://github.com/Illumina/manta).
+This folder contains the scripts used to run Manta on samples. For the Illumina Manta documentation please look [here](https://github.com/Illumina/manta).
 
 ## Manta Germline Script:
 
