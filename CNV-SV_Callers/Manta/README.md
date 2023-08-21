@@ -7,3 +7,5 @@ In order to run the script you can `qsub` or `./` but the first path that needs 
 ```bash
 ./script.sh /path/to/reference.fa /path/to/bam_folder
 ```
+
+The output will be in a sub-directory of the bam folder and the sub-directory will be called `Manta_Outputs`.
