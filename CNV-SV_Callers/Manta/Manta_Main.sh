@@ -21,7 +21,7 @@ input_dir=$2
 
 ## If someone installs Manta they must specify where the installation is placed:
 
-MANTA_INSTALL_PATH="path/to/manta-version.release_src/install"
+MANTA_INSTALL_PATH="/path/to/manta-version.release_src/install"
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
