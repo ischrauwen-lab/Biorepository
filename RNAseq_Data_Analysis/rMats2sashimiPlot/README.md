@@ -1,1 +1,1 @@
-This script uses the software rMats2sashimiPlot on this Github repository [here](https://github.com/Xinglab/rmats2sashimiplot). 
+This script uses the software rMats2sashimiPlot on this Github repository [here](https://github.com/Xinglab/rmats2sashimiplot). It uses it via the McFonsecaLab/rMats docker which was pulled via singularity.
