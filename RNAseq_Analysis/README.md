@@ -1,3 +1,13 @@
 # RNA-seq Analysis
 
-This directory contains pipelines to handle various types of RNAseq analysis. 
+## Alignment 
+
+## Circular RNA
+
+## Differential Editing
+
+## Differential Expression
+
+## Differential Splicing
+
+## Nonsense-mediated Decay
