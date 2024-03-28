@@ -1,32 +1,33 @@
+#This step is only done once for the sample
+
 #!/bin/bash
 #$ -l h_rt=96:00:00
-#$ -l h_vmem=40G
-#$ -N Reference_Genome_STAR
-#$ -o /path/to/Reference_Genome_STAR-$JOB_ID.out
-#$ -e /path/to/Reference_Genome_STAR-$JOB_ID.err
+#$ -l h_vmem=30G
+#$ -N Build_Reference_Genome_STAR
+#$ -o /path/to/Build_STAR_Index-$JOB_ID.out
+#$ -e /path/to/Build_STAR_Index-$JOB_ID.err
 #$ -j y
 #$ -q queue
 
 #____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 # Export your Miniconda path
-
 #____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
 # Load modules
-module load STAR Version 2.7.10b
-module load SAMTOOLS Version 1.17
+module load STAR/2.7.11a
+module load SAMTOOLS/1.17
+
 
 # _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-# Path to the fasta ref genome for alignment from Ensembl then run:
-Genome_FASTA=""
+# Path to the soft masked ref genome for alignment from Ensemble then run:
+Genome_FASTA="/path/to/fasta_file.fa"
 
 # Path to the annotation GTF file:
-Annotation_GTF=""
+Annotation_GTF="/path/to/GTF_file.gtf"
 
 # Path to the reference genome directory:
-Reference=""
+Reference="/path/to/references"
 
 #____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -34,29 +35,43 @@ Reference=""
 start_timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Print the timestamp to stdout:
-echo -e "\n\nJob started at: $start_timestamp\n"
+echo "                                "
+echo "Job started at: $start_timestamp"
+echo "                                "
 
 #____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
-STAR \
-    --runThreadN 10 \
-    --runMode genomeGenerate \
-    --genomeDir "$Reference" \
-    --genomeFastaFiles "$Genome_FASTA" \
-    --sjdbGTFfile "$Annotation_GTF"
+#create a directory 
+STAR_dir="${Reference}/STAR_Reference"
+if [ ! -d "$STAR_dir" ]; then
+        echo "Creating directory: $STAR_dir"
+        mkdir -pv "$STAR_dir"
+    fi
     
+STAR \
+    --runThreadN 20 \
+    --runMode genomeGenerate \
+    --genomeDir "${STAR_dir}" \
+    --genomeFastaFiles "$Genome_FASTA" \
+    --sjdbGTFfile "${Annotation_GTF}" \
+    --sjdbOverhang 100 \
+    --limitSjdbInsertNsj 10000000 
+
 #____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 # Memory Used:
-echo -e "\nLet's look at the vmem:\n"
-qstat -j $JOB_ID | grep vmem 
-
-# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+echo "                       "
+echo "Let's look at the vmem:"
+qstat -j $JOB_ID | grep vmem
+echo "                       "
 
 # Get the timestamp when the command completes:
 end_timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
-# Print the end timestamp to stdout:
-echo -e "\nJob ended at: $end_timestamp\n"
+# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-#____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+# Print the end timestamp to stdout:
+echo "                            "
+echo "Job ended at: $end_timestamp"
+echo "                            "
+
+# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
