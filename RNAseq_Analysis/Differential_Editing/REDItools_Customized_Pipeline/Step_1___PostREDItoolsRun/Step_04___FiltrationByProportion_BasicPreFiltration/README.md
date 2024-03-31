@@ -1,6 +1,6 @@
 # Step 04: Filtration By Proportion - Basic Pre-Filtration
 
-## Protocol For Step 4 Filteration Via Proportion (Including Basic Filtration):
+## Protocol For Step 4 Filtration Via Proportion (Including Basic Filtration):
 
 1) For the `ipynb` staring with `Part_1_And_Part_2` you will need the following:
 
