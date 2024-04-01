@@ -131,9 +131,9 @@ the_covariates <- data.frame(treatment = c('control', 'control', 'control',
                                            'mutant', 'mutant', 'mutant',
                                            'mutant', 'mutant', 'mutant'),
                              timepoint = c(2,2,2,
-                                           5,5,5,
+                                           1,1,1,
                                            2,2,2,
-                                           5,5,5)
+                                           1,1,1)
 )
 
 # Loop through the rows
