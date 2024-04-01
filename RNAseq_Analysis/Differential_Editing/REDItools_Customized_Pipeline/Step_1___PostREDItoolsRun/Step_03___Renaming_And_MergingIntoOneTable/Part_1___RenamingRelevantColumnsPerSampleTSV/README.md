@@ -3,8 +3,6 @@
 
 ## Protocol:
 
-### Step 03 Part 1: Rename Individual Sample Files To Have The Sample Name In The Column Name
-
 **Note(s):**
 
 * This will extract the name of the file based on the first `_`
