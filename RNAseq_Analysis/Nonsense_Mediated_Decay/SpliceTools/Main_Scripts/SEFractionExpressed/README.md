@@ -2,7 +2,7 @@
 
 ## Protocol:
 
-1) Make sure you have an rMats Output directory already created for your 2 experimental groups in this case (KnockIn/KnockOut).
+1) Make sure you have an rMats Output directory already created for your 2 experimental groups in this case (such as Timepoint1/Timepoint2, KnockIn/KnockOut etc.).
 2) Modify the SEFractionExpressed script so that it has the following inputs (described below):
 
 | Variables | Description |
