@@ -15,3 +15,5 @@
 
 3) Modify the job scheduling directives as needed.
 4) Submit the script to the HPC queue/run it.
+
+**Note:** Your output will be located in your rMats output directory.
