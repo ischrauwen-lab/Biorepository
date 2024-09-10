@@ -2,7 +2,12 @@
 
 Manta is useful for CNV calling. Please refer to the [Illumina Manta github repository](https://github.com/Illumina/manta/tree/master) for more specific information on the software.
 
-## Regular Version Scaffold Protocol:
+
+## Scaffold Protocols:
+
+These protocols are intended to inform users how to use the scripts we created to run Manta on our data.
+
+### Regular Version Scaffold Protocol:
 
 1) The inputs for the regular versiona are as follows:
 
@@ -16,7 +21,7 @@ Manta is useful for CNV calling. Please refer to the [Illumina Manta github repo
 2) Adjust the job scheduling directives as needed.
 3) Run the script.
 
-## Parallelized Version Scaffold Protocol:
+### Parallelized Version Scaffold Protocol:
 
 * Comments used in each script are relatively self explanatory however, in the parallel there is one job directive that specifies an array `#SBATCH --array=1-n` here n is equal to the number of bams.
 
