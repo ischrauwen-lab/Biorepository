@@ -1,19 +1,12 @@
 #!/bin/bash
-#$ -l h_rt=72:00:00
-#$ -l h_vmem=50G
-#$ -N Manta_Small_Batch
-#$ -o /path/to/Manta_Small_Batch-$JOB_ID.out
-#$ -e /path/to/Manta_Small_Batch-$JOB_ID.err
-#$ -j y
-#$ -q queue
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
 # Accept path to reference fasta file as a parameter:
-reference=$1
+reference=""
 
 ## Input Directory where filtered bams are located:
-input_dir=$2
+input_dir=""
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
