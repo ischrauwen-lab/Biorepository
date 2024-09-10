@@ -1,6 +1,6 @@
 # Step 03: Renaming And Merging In Relevant Columns Into One Table
 
-## Protocol:
+## Protocol For Step 03: Renaming And Merging In Relevant Columns Into One Table:
 
 ### Step 03 Part 1: Rename Individual Sample Files To Have The Sample Name In The Column Name
 
