@@ -1,6 +1,6 @@
 # How To Use Singularity
 
-For more information please refer to the [user guid for Singularity](https://docs.sylabs.io/guides/2.6/user-guide/index.html).
+For more information please refer to the [user guide for Singularity](https://docs.sylabs.io/guides/2.6/user-guide/index.html).
 
 ## Before Downloading:
 
