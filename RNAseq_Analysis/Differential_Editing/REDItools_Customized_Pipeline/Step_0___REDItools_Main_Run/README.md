@@ -22,7 +22,8 @@
 | `strand_inference_type`                     | Specifies inference type: MaxValue or UseConfidence (default 2).                                       | N/A                                           | `2`                                           |
 | `REDItools_Version_1_Repository_Path`       | Path to the REDItools Version 1 repository.                                                           | `"/path/to/reditools_v1_repo"`                | **Same As Non-Stranded**                      |
 
-
+* Notes are placed in each script that may add more information.
+ 
 2) Edit the job scheduling directives as needed.
 3) `chmod +x` the script.
 4) Run the script.
