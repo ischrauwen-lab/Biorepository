@@ -1,5 +1,7 @@
 # CuffDiff
 
+Here we used the software [Cufflinks](http://cole-trapnell-lab.github.io/cufflinks/install/) and in particular CuffDiff.
+
 ## Scaffold Protocol For CuffDiff
 
 1) Modify the script to have the inputs described below:
