@@ -1,10 +1,6 @@
 # An Extremely Basic Protocol For Github
 
-**Note:** This is a very basic protocol assuming you have already used `git clone`.
-
-![Github Git Reference Image](https://www.stephenmarron.com/wp-content/uploads/2017/02/git-880x440.png)
-
-* This image was not created by me the credit goes to Stephen Marron.
+**Note:** This is an extremely basic protocol assuming you have already used `git clone`.
 
 ## How To Push To Github (Basic)
 
