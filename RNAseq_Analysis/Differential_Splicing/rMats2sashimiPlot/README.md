@@ -1,6 +1,6 @@
 # rMats2sashimiPlot
 
-This script uses the software rMats2sashimiPlot on this Github repository [here](https://github.com/Xinglab/rmats2sashimiplot). It uses it via the [McFonsecaLab/rMats docker](https://hub.docker.com/r/mcfonsecalab/rmats) which was pulled via singularity.
+This script uses the software [rMats2sashimiPlot](https://github.com/Xinglab/rmats2sashimiplot). It uses it via the [McFonsecaLab/rMats docker](https://hub.docker.com/r/mcfonsecalab/rmats) which was pulled via singularity.
 
 ## Scaffold Protocol For rMats2sashimiPlot:
 
