@@ -1,1 +1,1 @@
-# Information Related To What Is Necessary To Run Scripts
+# Information Related To What We Used In Scripts
