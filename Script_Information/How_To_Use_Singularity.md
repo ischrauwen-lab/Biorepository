@@ -37,6 +37,7 @@ singularity build --remote picard.sif docker://broadinstitute/picard
 
 1) Know the path to your singularity and place that path in the  `singularity_image` variable:
 
+**Example:**
 ```bash
 # The Singularity image GATK 4.4.0.0:
 singularity_image="/path/to/gatk_latest.sif"
@@ -44,6 +45,7 @@ singularity_image="/path/to/gatk_latest.sif"
 
 2) Know the path inside your singularity to use to execute commands. For GATK 4.4.0.0 it is `/gatk/gatk`. This will create a base command of `singularity exec $singularity_image /gatk/gatk CommandFromGATK` an example is placed below:
 
+**Example:**
 ```bash
 singularity exec $singularity_image /gatk/gatk FilterIntervals \
   --intervals ${preprocessed_interval_dir}/PreprocessIntervals.interval_list \
