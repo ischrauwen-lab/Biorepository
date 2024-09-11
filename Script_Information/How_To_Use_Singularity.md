@@ -8,11 +8,7 @@ For more information please refer to the [user guide for Singularity](https://do
 
 ## Making Your Singularity File:
 
-1) Load the Singularity using `module load Singularity/version` you can check with `module spider Singularity` if the versions change.
-
-```bash
-module load Singularity/3.9.4
-```
+1) Load the Singularity.
 
 2) Generate an Access Token if required by going to this [site](https://cloud.sylabs.io/auth/tokens)  - store it locally on your machine as you will need it later.
 
