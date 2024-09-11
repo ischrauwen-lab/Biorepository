@@ -14,8 +14,8 @@
 
 2) Modify the versions of the modules as needed.
 
-3) `chmod +x` the script.
-
-4) Run the script.
+3) Edit the job scheduling directives as needed.
+4) `chmod +x` the script.
+5) Run the script.
 
 ### Step 2
