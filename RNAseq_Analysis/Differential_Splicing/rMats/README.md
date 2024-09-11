@@ -21,7 +21,7 @@ This script uses the software rMats found on this Github repository [here](https
 
 | **Software**   | **Version** |
 |----------------|-------------|
-| SAMTOOLS       | 1.17        |
+| Samtools       | 1.17        |
 | Singularity    | 3.9.4       |
 | STAR           | 2.7.10b     |
 
