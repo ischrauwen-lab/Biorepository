@@ -1,6 +1,6 @@
 # rMats
 
-This script uses the software [rMats-turbo](https://github.com/Xinglab/rmats-turbo). It uses it via the [McFonsecaLab/rMats docker](https://hub.docker.com/r/mcfonsecalab/rmats) which was pulled via singularity.
+This script uses the software [rMats-turbo](https://github.com/Xinglab/rmats-turbo). It uses it via the [McFonsecaLab/rMats docker](https://hub.docker.com/r/mcfonsecalab/rmats) which was pulled as a singularity.
 
 ## Scaffold Protocol For rMats Script:
 
