@@ -6,10 +6,10 @@
 
 | **Variable**           | **Description**                                                          |
 |------------------------|--------------------------------------------------------------------------|
-| `bam_directory`        | Specify the directory containing the BAM files.                          |
-| `output_directory`     | Specify the output directory.                                              |
-| `reference_genome`     | Specify the path to the reference FASTA file.                              |
-| `annotation_gtf`       | Specify the path to the annotation GTF file.                               |
+| `bam_directory`        | The full path to the directory containing the BAM & BAI files.     |
+| `output_directory`     | The full path to the output directory.                             |
+| `reference_genome`     | The full path to the reference FASTA.                              |
+| `annotation_gtf`       | The full path to the GTF file.                                     |
 
 
 2) Modify the module `Cufflinks` for the latest version.
