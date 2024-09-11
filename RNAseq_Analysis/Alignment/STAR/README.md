@@ -2,7 +2,7 @@
 
 ## Protocol:
 
-## Step 1:
+### Step 1: Generating The STAR Reference
 
 1) The necessary paths are described below:
 
@@ -17,3 +17,5 @@
 3) `chmod +x` the script.
 
 4) Run the script.
+
+### Step 2
