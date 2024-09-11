@@ -36,7 +36,7 @@ At this point, you can find the "Remote Explore" on the left-side toolbar of the
 [This document](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_variable-explorer-and-data-viewer) provides a good reference for Jupyter Notebook in VS Code. Here is a brief setup guide:
 
 1. You need to install VS Code extensions `Jupyter`, `Python` and `R`. To edit Jupyter Notebook on remote computer you also need to install these extensions again to the remote computer, after you connect to the environment.
-2. To use `R` properly, you may also need to install the R Language Server library: `micromamba install r-languageserver`.
+2. To use `R` properly, you may also need to install the R Language Server library.
 3. After you open a Jupyter Notebook, you can find on the top right corner options to `Select Kernel` for the version of kernel you choose to load. Make sure you select kernels from the software environment you prefer. 
 
 For more details on managing the jupyter kernels in VS Code, please refer to [here](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_jupyter-kernels).
