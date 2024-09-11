@@ -12,7 +12,7 @@
 | `Annotation_GTF`        | Path to the annotation GTF file.                                                                  | `"/path/to/annotation.gtf"`      |
 | `Reference`             | Path to the reference genome directory.                                                           | `"/path/to/reference_dir"`       |
 
-2) Modify the versions of the modules as needed.
+2) Modify the versions of the modules for STAR and SAMtools for the latest version as needed.
 
 3) Edit the job scheduling directives as needed.
 4) `chmod +x` the script.
