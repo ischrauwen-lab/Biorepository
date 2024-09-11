@@ -37,7 +37,7 @@ singularity build --remote picard.sif docker://broadinstitute/picard
 
 # Using Your Singularity File:
 
-1) Know the path to your singularity. An example is placed below:
+1) Know the path to your singularity and place that path in the  `singularity_image` variable:
 
 ```bash
 # The Singularity image GATK 4.4.0.0:
