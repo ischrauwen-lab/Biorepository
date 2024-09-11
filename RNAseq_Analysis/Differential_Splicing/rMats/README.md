@@ -17,3 +17,14 @@ This script uses the software rMats found on this Github repository [here](https
 | `RMATS_SCRIPT`            | The relative path to the rmats.py script within the Singularity container.            |
 
 2) Add in the job scheduling directives.
+3) Edit the modules loaded. We used the following:
+
+| **Software**   | **Version** |
+|----------------|-------------|
+| SAMTOOLS       | 1.17        |
+| Singularity    | 3.9.4       |
+| STAR           | 2.7.10b     |
+
+
+4) `chmod +x` the script.
+5) Run the script. 
