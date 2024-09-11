@@ -12,4 +12,7 @@
 | `annotation_gtf`       | Specify the path to the annotation GTF file.                               |
 
 
-2) 
+2) Modify the module `Cufflinks` for the latest version.
+3) Add job scheduling directives.
+4) `chmod +x` the script.
+5) Run the script.
