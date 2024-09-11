@@ -2,7 +2,7 @@
 
 ## Scaffold Protocol For REDItools Main Run:
 
-1) The inputs used for the main REDItools run using [REDItools Version 1](https://github.com/BioinfoUNIBA/REDItools/tree/master) are described below:
+1) The inputs used for the main REDItools run to create non-stranded and stranded using [REDItools Version 1](https://github.com/BioinfoUNIBA/REDItools/tree/master) are described below:
 
 | **Variable**                                | **Description**                                                                                       | **Input Used For Non-Stranded**               | **Input Used For Stranded**                   |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|
