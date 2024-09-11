@@ -6,6 +6,7 @@
 
 | **Variable**                                | **Description**                                                                                       | **Input Used For Non-Stranded**               | **Input Used For Stranded**                   |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| `input_folder`                              | Directory containing all the relevant BAM/BAI files.                                                   | `"/path/to/input_folder"`                     | **Same As Non-Stranded**                      |
 | `reference`                                 | Path to the reference FASTA file.                                                                     | `"/path/to/reference_sm.primary_assembly.fa"` | **Same As Non-Stranded**                      |
 | `Tab_file`                                  | File with positions to exclude, typically used to remove known genomic variants (e.g., dbSNP data).    | `"/path/to/tab/file.txt"`                     | **Same As Non-Stranded**                      |
 | `SpliceSitesFile`                           | File containing splice sites information.                                                             | `"/path/to/Splice/Sites/File.ss"`             | **Same As Non-Stranded**                      |
@@ -21,6 +22,7 @@
 | `strand_confidence`                         | Confidence threshold for strand inference (default 0.7).                                               | N/A                                           | `0.7`                                         |
 | `strand_inference_type`                     | Specifies inference type: MaxValue or UseConfidence (default 2).                                       | N/A                                           | `2`                                           |
 | `REDItools_Version_1_Repository_Path`       | Path to the REDItools Version 1 repository.                                                           | `"/path/to/reditools_v1_repo"`                | **Same As Non-Stranded**                      |
+
 
 * Notes are placed in each script that may add more information.
  
