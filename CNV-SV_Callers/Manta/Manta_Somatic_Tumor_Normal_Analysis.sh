@@ -1,26 +1,17 @@
-#!/bin/bash
-#$ -l h_rt=72:00:00
-#$ -l h_vmem=30G
-#$ -N Manta_On_Tumor_Normal
-#$ -o /path/to/Manta_On_Tumor_Normal-$JOB_ID.out
-#$ -e /path/to/Manta_On_Tumor_Normal-$JOB_ID.err
-#$ -j y
-#$ -q queue
-
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
 # Tumor Sample:
-Tumor_Sample="path/to/Tumor.bam"
+Tumor_Sample="/path/to/Tumor.bam"
 
 # Normal Sample:
 Normal_Seq_Counterpart="/path/to/Normal.bam"
 
 # Reference Fasta
-reference=/path/to/reference.fa 
+reference="/path/to/reference.fa" 
 
 # Output directory:
-output_dir="path/to/output/folder"
+output_dir="/path/to/output/folder"
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -30,11 +21,11 @@ MANTA_INSTALL_PATH="path/to/manta/install"
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
-# Get the current timestamp
+# Get the current timestamp:
 start_timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
-# Print the timestamp to stdout
-echo "Job started at: $start_timestamp"
+# Print the timestamp to stdout:
+echo -e "\n\n**Job Started At:** $start_timestamp\n"
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -64,10 +55,7 @@ echo "Done running Manta on a set of exomes"
 end_timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Print the end timestamp to stdout:
-echo "Job ended at: $end_timestamp"
-
-# Remove the script from the queue:
-qdel $JOB_ID
+echo -e "\n**Job Ended At:** $end_timestamp\n"
 
 #______________________________________________________________________________________________________________________________________________________________________________________________
 
