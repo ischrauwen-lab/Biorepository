@@ -119,8 +119,6 @@ echo "Number of BAM files: $number_of_bams"
 
 # Run the reditools.py script
 
-#python src/cineca/reditools.py -f "$INPUT_BAM_FILE" -r "$REFERENCE" -o "$OUTPUT_FILE"
-
 # Iterate over each input BAM file
 for input_bam in "${input_folder}"/*.bam; do
     # Check if there are any matching files
@@ -130,7 +128,6 @@ for input_bam in "${input_folder}"/*.bam; do
     output_subfolder="${output_folder}/$(basename "$input_bam" .bam)___REDItools_V1_Stranded"
 
     # Run REDItoolDenovo command for each BAM file (REDItoolDenovo.py in REDItools V1)
-    #singularity exec "$singularity_image" /src/cineca/reditools.py \
     python "$REDItools_Version_1_Repostory_Path/main/REDItoolDenovo.py" \
         -i "$input_bam" \
         -f "$reference" \
