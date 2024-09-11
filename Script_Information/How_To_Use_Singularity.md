@@ -1,8 +1,10 @@
 # How To Use Singularity
 
+For more information please refer to the [user guid for Singularity](https://docs.sylabs.io/guides/2.6/user-guide/index.html).
+
 ## Before Downloading:
 
-1) Check if your container is already on the cluster in the singularity container of your lab.
+1) Check if your container is already on the cluster in the singularity container directory of your lab.
 
 ## Making Your Singularity File:
 
