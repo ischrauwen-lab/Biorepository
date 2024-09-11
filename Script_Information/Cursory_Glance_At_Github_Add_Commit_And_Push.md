@@ -1,4 +1,4 @@
-# Github
+# An Extremely Basic Protocol For Github
 
 **Note:** This is a very basic protocol assuming you have already used `git clone`.
 
