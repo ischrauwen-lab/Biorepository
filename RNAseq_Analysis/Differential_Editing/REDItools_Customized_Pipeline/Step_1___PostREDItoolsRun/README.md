@@ -1,4 +1,4 @@
-# REDItools *De Novo* Data Processing Pipeline With 2 Pre-Filtration Options:
+# REDItools Data Processing Pipeline With 2 Custom Pre-Filtration Options:
 
 We used R version 4.2.2 for all the R scripts here.
 
