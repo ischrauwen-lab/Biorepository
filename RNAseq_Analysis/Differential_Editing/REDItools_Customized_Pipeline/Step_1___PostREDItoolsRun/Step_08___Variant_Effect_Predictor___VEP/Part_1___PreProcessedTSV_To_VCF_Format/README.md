@@ -6,7 +6,7 @@
 
 | Variables    | Descriptions     |
 |-------------|--------------|
-| `TSV_FILE` | Path to the Step 08 Pre-Filtration Type SubStep 0 All Nucleotides `.tsv` file  |
+| `TSV_FILE` | Path to the Step 08 Pre-Filtration Type Part 0  `.tsv` file  |
 | `OUTPUT_DIRECTORY` | Path to Pre-Filtration Type SubStep 1 directory  |
 | `BASE_NAME` | Base name of output file  | 
 | `REFERENCE_FASTA` | The reference fasta used for the entire experiment.  | 
