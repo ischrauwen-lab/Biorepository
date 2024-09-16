@@ -53,7 +53,7 @@ This can be done per pre-filtration type.
 |----------------|----------|
 | `Step_3___Part_2_Directory`     | The full path to the Step 3 Part 2 directory |
 | `Step_6___Output_TSV`     | The full path to the Step 06 REDITs Regression Pre-Filtration type `tsv` |
-| `output_directory`     | The full path to the `Step_07___MergeIn/Part_1___BreakDown_By_PreFiltration_Type___Final/PreFiltration_Type` |
+| `output_directory`     | The full path to the `Step_07___MergeIn/Part_1___BreakDown_By_PreFiltration_Type/PreFiltration_Type` |
 | `subfolder_name`     | Name of your subfolder |
 
 2) Run the `ipynb`. 
