@@ -30,5 +30,5 @@ This part merges all the SampleNameNon_Edited_Count, SampleNameEdited_Count and 
 | `subfolder_name_part_1`    | The name of the Part 1 folder in this case `Part_1___RenamingRelevantColumnsPerSampleTSV"`    |
 | `subfolder_name_part_2`    | The name of the Part 2 subfolder that you want in this case `"Part_2___MergedSamplesIntoOneTable"`. This will be the folder created in the `output_directory_path` folder for your outputs.    |
 
-2) Edit the bash script (found in the `Part_2___MergingAllSampleTSVsIntoOneTable` directory) used to execute the Rscript. It requires one path in the variable `RSCRIPT_DIR` which is the path to the directory containing the R script. After the `Rscript` command you need to put the name of the R script in this case `Part_2___Rscript_MergingAllTSVsIntoOneTable.R`. 
+2) Edit the bash script (found in the `Part_2___MergingAllSampleTSVsIntoOneTable` directory) used to execute the Rscript. It requires one path in the variable `RSCRIPT_DIR` which is the path to the directory containing the R script. After the `Rscript` command you need to put the name of the R script. 
 3) Run the bash script and this bash script will execute the R script.
