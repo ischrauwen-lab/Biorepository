@@ -2,12 +2,11 @@
 
 * This is used on REDItools Stranded data only. It is optional.
 
-
 ## Scaffold Protocol:
 
 ### Protocol For Part 1: Merging In First Four Columns From Step 1:
 
-1) Editing `SubPart_2___MergingInFirstFourColumnsFromStep1.R` file to have the following inputs described in detail below:
+1) Editing R script to have the following inputs described in detail below:
 
 | Variable(s)                    | Description(s)                                                                                        | 
 |----------|----------|
@@ -32,7 +31,6 @@
 5) Submit the bash script to the HPC queue.
 
 ### Protocol For Part 2: Breakdown By Pre-Filtration Type Per Pre-Filtration
-
 
 1) Edit the `ipynb` in this folder to have the following:
 
