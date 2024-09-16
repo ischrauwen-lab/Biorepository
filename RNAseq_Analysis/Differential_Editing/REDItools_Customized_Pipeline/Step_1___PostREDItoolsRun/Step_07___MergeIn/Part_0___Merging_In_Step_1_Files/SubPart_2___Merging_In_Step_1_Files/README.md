@@ -4,7 +4,7 @@
 
 1) Edit the R script in the relevant directory to have the following inputs:
 
-| Variable | Description | Inputs Used |
+| Variable | Description | Scaffold/Example Inputs Used |
 |-----------------|-----------------|-----------------|
 | `input_directory` | Path to the step 7 part 1 subpart 1 folder  | `"/path/to/Step_07___MergeIn/Part_0___MergingInStep1Files/SubPart_1___RenamingRelevantColumnsDirectory"` |
 | `output_directory` | Path to the step 7 part 1 subpart 2 folder | `"/path/to/Step_07___MergeIn/Part_0___MergingInStep1Files/SubPart_2___MergeAllStep1___Final"` |
@@ -20,7 +20,7 @@
 3) Edit the R module information as needed in the bash script.
 4) Edit the input in the bash script:
 
-| Variable       | Description | Input Used   |
+| Variable       | Description | Example Path   |
 |----------------|----------|------------|
 | `RSCRIPT_PATH`     | Path to the R script | `"/the/full/path/to/Step_07___Merge_In/Part_0___Merging_In_Step_1_Files/SubPart_2___Merging_In_Step_1_Files/Script.R"` |
 
