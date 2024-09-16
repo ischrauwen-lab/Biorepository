@@ -1,7 +1,7 @@
-# Step 08: Variant Effect Predictor <br> S
+# Step 08: Variant Effect Predictor <br> Part 2: Main Variant Effect Predictor (VEP) Run
 
 
-### Part 2: Main Variant Effect Predictor (VEP) Run
+### Scaffold Protocol For Part 2: Main Variant Effect Predictor (VEP) Run
 
 1) Edit the SubStep 2 SuperScript to have the following inputs:
 
