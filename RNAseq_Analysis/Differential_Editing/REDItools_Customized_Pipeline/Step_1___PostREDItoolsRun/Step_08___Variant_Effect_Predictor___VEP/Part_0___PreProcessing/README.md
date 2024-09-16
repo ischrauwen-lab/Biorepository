@@ -12,3 +12,6 @@
 | `java_file`         | Path to the java file. The bash script provides paths to this.       |
 | `logFile`           | Path to a log file of your choice named however you wish to name it. |
 | `singularity_image` | Path to the java singularity.                   |
+
+2) Edit the job scheduling directives.
+3) Run the bash script.
