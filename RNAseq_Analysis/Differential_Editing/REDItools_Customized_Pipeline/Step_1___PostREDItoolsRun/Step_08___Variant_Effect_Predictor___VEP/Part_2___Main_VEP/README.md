@@ -21,5 +21,5 @@
 | `script_path_2b`       | Path to the MSFR (Most Severe Flag Removed) script          |
 
 
-2) Edit the job scheduling directives of the superscript as needed. 
-3) Run the super script.
+2) Edit the job scheduling directives of the superscript and subscripts as needed. 
+3) Run the super script to run the subscripts.
