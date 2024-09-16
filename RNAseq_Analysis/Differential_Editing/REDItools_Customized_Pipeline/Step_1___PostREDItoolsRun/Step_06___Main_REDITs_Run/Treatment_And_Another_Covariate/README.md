@@ -4,8 +4,8 @@
 
 1) Edit the R script in the Step 6 directory per filtration to have the following:
 
-| Variable | Description | Input Used |
-|-----------------|-----------------|-----------------|
+| Variable | Description |
+|-----------------|-----------------|
 | `REDITs_Cloned_Directory` | The path to the REDITs cloned directory  |
 | `data_file` | **Basic Pre-Filtration** The path to the Step 4 Part 5 `tsv` <br> **Strict Pre-Filtration:** The path to step 5 `tsv` |
 
