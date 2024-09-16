@@ -8,7 +8,7 @@
 |-----------------|-----------------|-----------------|
 | `input_directory` | Path to the step 7 part 1 subpart 1 folder  | `"/path/to/Step_07___MergeIn/Part_0___MergingInStep1Files/SubPart_1___RenamingRelevantColumnsDirectory"` |
 | `output_directory` | Path to the step 7 part 1 subpart 2 folder | `"/path/to/Step_07___MergeIn/Part_0___MergingInStep1Files/SubPart_2___MergeAllStep1___Final"` |
-| `base_file_name` | The basname you wish to use for your output  | `"All_DPF___Stranded___MergedStep1FileFinal"` |
+| `base_file_name` | The basname you wish to use for your output  | `"DescriptorOfYourChoice"` |
 | `Control_File_Prefix` | The prefix used for control samples only         | `"Control"` |
 | `Experiment_File_Prefix` | The prefix used for experimental samples only | `"Experimental"` |
 | `lowest_number_experiment` | The lowest number/ID for the experimental samples   | `1` |
