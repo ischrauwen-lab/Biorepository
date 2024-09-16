@@ -19,4 +19,5 @@
 | `RSCRIPT_PATH` | Path to the R script  |
 
 3) Edit the job scheduling directives of the bash script as needed.
-4) Run the bash script per pre-filtratation.
+4) Edit the version of R loaded as needed (we used R version `4.2.2`)
+5) Run the bash script per pre-filtratation.
